@@ -2,7 +2,7 @@
 
 ##### [Terrain documentation](terrain/Readme.markdown)
 
-## Some of the examples below use the following images. You may use these images without permission for testing purposes only.
+Some of the examples below use the following images, which are copyright Oxonline Games. You are granted permission to download and use these images for testing purposes only.
 
 ![ground.png](ground.png)
 ![underground.png](underground.png)
