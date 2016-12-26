@@ -33,6 +33,31 @@ end, 0)
 
 ![example1.png](example1.png)
 
+## Basic terrain without a ground fill or texture
+
+``````
+local terra = terrain.createTerrain({
+    x = 480,
+    y = 400,
+    width = 960,
+    minHeight = 100,
+    maxHeight = 480,
+    physics = true,
+    complexity = 5,
+    smoothness = 3.5,
+    fill = { type="image", filename="assets/underground.png" },
+})
+
+timer.performWithDelay(1000, function()
+    local r = math.random(3, 10)
+    local circle = display.newCircle(math.random(0, 300), 0, r)
+    circle.fill = {1, 1, 1}
+    physics.addBody(circle, {shape="circle", radius=r, bounce=0.5})
+end, 0)
+``````
+
+![example6.png](example6.png)
+
 ## Basic terrain using gradients
 
 ``````
